@@ -53,14 +53,14 @@ const AppBar = () => {
         <TextField size="small" id="outlined-search" placeholder="Search..." type="search" />
         <ModeSelect />
 
-        <Tooltip title="Notification">
+        <Tooltip title="Notifications" sx={{ cursor: 'pointer' }}>
           <Badge color="secondary" variant="dot" sx={{ cursor: 'pointer' }}>
-            <NotificationsNoneIcon />
+            <NotificationsNoneIcon sx={{ color: 'primary.main' }} />
           </Badge>
         </Tooltip>
 
         <Tooltip title="Help" sx={{ cursor: 'pointer' }}>
-          <HelpOutlineIcon />
+          <HelpOutlineIcon sx={{ color: 'primary.main' }} />
         </Tooltip>
 
         <Profiles />
